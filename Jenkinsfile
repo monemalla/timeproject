@@ -17,6 +17,15 @@ pipeline {
             }
         }
 
+		stage('test unit') {
+
+            steps {
+
+                echo 'INSIDE Build Stage'
+
+                bat "mvn test"
+            }
+        }
         stage('Sonar') {
  
             steps {
