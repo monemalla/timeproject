@@ -17,15 +17,7 @@ pipeline {
             }
         }
 
-		stage('test unit') {
-
-            steps {
-
-                echo 'les tests unitaires '
-
-                bat "mvn test"
-            }
-        }
+		
         stage('Sonar') {
  
             steps {
