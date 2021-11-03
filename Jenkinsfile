@@ -21,7 +21,7 @@ pipeline {
 
             steps {
 
-                echo 'INSIDE Build Stage'
+                echo 'les tests unitaires '
 
                 bat "mvn test"
             }
