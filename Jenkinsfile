@@ -40,6 +40,15 @@ pipeline {
 		
 		
     }
+	try {
+    throw new Exception('fail!')
+} catch (all) {
+    currentBuild.result = "FAILURE"
+} finally {
+     node('master') {
+        step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'allagui967@gmail.com', sendToIndividuals: true])
+    }   
+}
 		
  }
 
