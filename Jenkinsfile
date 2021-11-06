@@ -49,8 +49,13 @@ pipeline {
 		    steps {
 			   echo 'Inside Push to registry Stage'
 			   
-			   bat "docker tag ${ARTIFACTID}:latest monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
-			   bat "docker push monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
+			   script{
+			     docker.withRegistry('', dockerHub){
+			       bat "docker tag ${ARTIFACTID}:latest monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
+			       bat "docker push monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
+				 }
+			   }
+		
 		}
     }
  }
