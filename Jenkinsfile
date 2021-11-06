@@ -43,13 +43,13 @@ pipeline {
 			   echo 'Inside build Docker Image Stage'
 			   
 			   bat "mvn dockerfile:build -Ddockerfile.repository=${ARTIFACTID}"
+			   bat "docker tag ${ARTIFACTID}:latest monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
 		}
     }
 	    stage ('Push to registry'){
 		    steps {
 			   echo 'Inside Push to registry Stage'
 			     withDockerRegistry([ credentialsId: "dockerHub", url: "" ]){
-			       bat "docker tag ${ARTIFACTID}:latest monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
 			       bat "docker push monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
 				 }
 			   }
