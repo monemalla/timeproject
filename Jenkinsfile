@@ -49,12 +49,14 @@ pipeline {
 		    steps {
 			   echo 'Inside Push to registry Stage'
 			  
-			     withDockerRegistry([ credentialsId: "dockerHub", url: "https://hub.docker.com/" ]){
+			     //withDockerRegistry([ credentialsId: "dockerHub", url: "https://hub.docker.com/" ]){
 			       //bat "docker tag ${ARTIFACTID}:latest monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
 			       //bat "docker push monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
+				  docker login -u monemalla -p 98678795mm
 				  echo "monem monem"
+				  
 				   
-				 }
+				 //}
 			   }
 		
 		}
