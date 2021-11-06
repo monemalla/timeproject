@@ -48,12 +48,14 @@ pipeline {
 	    stage ('Push to registry'){
 		    steps {
 			   echo 'Inside Push to registry Stage'
+			   script{
 			     withDockerRegistry([ credentialsId: "dockerHub", url: "" ]){
 			       //bat "docker tag ${ARTIFACTID}:latest monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
 			       //bat "docker push monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
 				   bat "docker pull nginx"
 				   bat "docker tag nginx monemalla/nginx"
 				   bat "docker push monemalla/nginx"
+				   }
 				 }
 			   }
 		
