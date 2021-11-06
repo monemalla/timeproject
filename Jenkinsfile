@@ -6,7 +6,6 @@ pipeline {
         ARTIFACTID=POM.getArtifactId()
         ARTIFACT_VERSION = POM.getVersion()
         DOCKER_IMAGE_VERSION = "${env.BUILD_NUMBER}"
-		registryCredential = 'dockerHub'
     }
 
     tools {
@@ -17,7 +16,7 @@ pipeline {
 	
 
     stages {
-    /*    stage('Build') {
+        /*stage('Build') {
 
             steps {
 
@@ -49,9 +48,7 @@ pipeline {
 	    stage ('Push to registry'){
 		    steps {
 			   echo 'Inside Push to registry Stage'
-			   
-			   script{
-			     docker.withRegistry('', registryCredential){
+			     withDockerRegistry([ credentialsId: "dockerHub", url: "" ]){
 			       bat "docker tag ${ARTIFACTID}:latest monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
 			       bat "docker push monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
 				 }
@@ -61,3 +58,4 @@ pipeline {
     }
  }
 }
+
