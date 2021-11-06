@@ -48,8 +48,8 @@ pipeline {
 		    steps {
 			   echo 'Inside Push to registry Stage'
 			   
-			   bat 'docker tag ${ARTIFACTID}:latest monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}'
-			   bat 'docker push monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}'
+			   bat "docker tag ${ARTIFACTID}:latest monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
+			   bat "docker push monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
 		}
     }
  }
