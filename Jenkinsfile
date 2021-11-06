@@ -16,8 +16,8 @@ pipeline {
     }
 	
 
-    /*stages {
-        stage('Build') {
+    stages {
+    /*    stage('Build') {
 
             steps {
 
@@ -60,4 +60,4 @@ pipeline {
 		}
     }
  }
-
+}
