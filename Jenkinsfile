@@ -16,7 +16,8 @@ pipeline {
 	
 
     stages {
-        /*stage('Build') {
+	/*
+        stage('Build') {
 
             steps {
 
@@ -57,17 +58,41 @@ pipeline {
 				  
 				   
 				 }
-			   }*/
+			   }
 	    stage ('deliver to docker compose'){
 		  steps{
-		    echo 'Inside deliver to docker compse stage'
-			bat "get-content C:/Users/Gàston/Desktop/docker-compose.yaml | %{$_ -replace '"currentBuild.previousBuild.number"','"${DOCKER_IMAGE_VERSION}"'"
-			
+		    echo 'Inside deliver to docker compse stage'			
 			
 		  }
 		}
 		
+		*/
+		 stage('Test') {
+            steps {
+                sh 'echo "Fail!"; exit 1'
+            }
+        }
 		
+    }
+
+	post {
+        always {
+            echo 'This will always run'
+        }
+        success {
+            echo 'This will run only if successful'
+        }
+        failure {
+            mail bcc: 'allagui967@gmail.com', body: "<b>Example</b>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}<br> error: error=run.getPreviousBuild().result.toString().equals(run.result.toString())", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "ERROR CI: Project name -> ${env.JOB_NAME}", to: "allagui967@gmail.com";
+        }
+        unstable {
+            echo 'This will run only if the run was marked as unstable'
+        }
+        changed {
+            echo 'This will run only if the state of the Pipeline has changed'
+            echo 'For example, if the Pipeline was previously failing but is now successful'
+        }
+    }	
     }
  }
 
