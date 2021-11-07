@@ -61,7 +61,7 @@ pipeline {
 	    stage ('deliver to docker compose'){
 		  steps{
 		    echo 'Inside deliver to docker compse stage'
-			bat "get-content C:\Users\Gàston\Desktop\docker-compose.yaml | %{$_ -replace '"currentBuild.previousBuild.number"','"${DOCKER_IMAGE_VERSION}"'"
+			bat "get-content C:/Users/Gàston/Desktop/docker-compose.yaml | %{$_ -replace '"currentBuild.previousBuild.number"','"${DOCKER_IMAGE_VERSION}"'"
 			
 			
 		  }
