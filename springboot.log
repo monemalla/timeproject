@@ -1,12 +1,48 @@
-2021-11-02 15:00:54.428  INFO 16748 --- [main] tn.esprit.spring.test.TimeSheetTest      : Starting TimeSheetTest on DESKTOP-5J3PV4C with PID 16748 (started by GÃ ston in D:\logiciel\TimesheetProject)
-2021-11-02 15:00:54.446  INFO 16748 --- [main] tn.esprit.spring.test.TimeSheetTest      : No active profile set, falling back to default profiles: default
-2021-11-02 15:00:54.965  INFO 16748 --- [main] tn.esprit.spring.test.TimeSheetTest      : Started TimeSheetTest in 1.796 seconds (JVM running for 4.151)
-2021-11-02 19:58:16.887  INFO 13024 --- [main] tn.esprit.spring.test.TimeSheetTest      : Starting TimeSheetTest on DESKTOP-5J3PV4C with PID 13024 (started by Gàston in C:\Users\Gàston\Desktop\testemail\timeproject)
-2021-11-02 19:58:16.891  INFO 13024 --- [main] tn.esprit.spring.test.TimeSheetTest      : No active profile set, falling back to default profiles: default
-2021-11-02 19:58:17.245  INFO 13024 --- [main] tn.esprit.spring.test.TimeSheetTest      : Started TimeSheetTest in 1.174 seconds (JVM running for 2.621)
-2021-11-02 19:59:21.573  INFO 19300 --- [main] tn.esprit.spring.test.TimeSheetTest      : Starting TimeSheetTest on DESKTOP-5J3PV4C with PID 19300 (started by Gàston in C:\Users\Gàston\Desktop\testemail\timeproject)
-2021-11-02 19:59:21.576  INFO 19300 --- [main] tn.esprit.spring.test.TimeSheetTest      : No active profile set, falling back to default profiles: default
-2021-11-02 19:59:21.903  INFO 19300 --- [main] tn.esprit.spring.test.TimeSheetTest      : Started TimeSheetTest in 1.125 seconds (JVM running for 2.623)
-2021-11-02 20:14:00.679  INFO 12724 --- [main] tn.esprit.spring.test.TimeSheetTest      : Starting TimeSheetTest on DESKTOP-5J3PV4C with PID 12724 (started by Gàston in C:\Users\Gàston\Desktop\testemail\timeproject)
-2021-11-02 20:14:00.695  INFO 12724 --- [main] tn.esprit.spring.test.TimeSheetTest      : No active profile set, falling back to default profiles: default
-2021-11-02 20:14:01.039  INFO 12724 --- [main] tn.esprit.spring.test.TimeSheetTest      : Started TimeSheetTest in 1.25 seconds (JVM running for 2.48)
+2021-11-07 00:00:51.984  INFO 13828 --- [main] tn.esprit.spring.test.TimeSheetTest      : Starting TimeSheetTest on DESKTOP-5J3PV4C with PID 13828 (started by Gàston in C:\Users\Gàston\Desktop\testemail\timeproject)
+2021-11-07 00:00:52.012  INFO 13828 --- [main] tn.esprit.spring.test.TimeSheetTest      : No active profile set, falling back to default profiles: default
+2021-11-07 00:00:52.393  INFO 13828 --- [main] tn.esprit.spring.test.TimeSheetTest      : Started TimeSheetTest in 1.246 seconds (JVM running for 2.934)
+2021-11-07 00:05:36.407  INFO 19424 --- [main] tn.esprit.spring.test.TimeSheetTest      : Starting TimeSheetTest on DESKTOP-5J3PV4C with PID 19424 (started by Gàston in C:\Users\Gàston\Desktop\testemail\timeproject)
+2021-11-07 00:05:36.422  INFO 19424 --- [main] tn.esprit.spring.test.TimeSheetTest      : No active profile set, falling back to default profiles: default
+2021-11-07 00:05:36.716  INFO 19424 --- [main] tn.esprit.spring.test.TimeSheetTest      : Started TimeSheetTest in 1.003 seconds (JVM running for 2.331)
+2021-11-07 00:07:24.194  INFO 10728 --- [main] SpringBootCoreDataJpaMvcRest1Application : Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on DESKTOP-5J3PV4C with PID 10728 (started by GÃ ston in C:\Users\GÃ ston\Desktop\testemail\timeproject)
+2021-11-07 00:07:24.199  INFO 10728 --- [main] SpringBootCoreDataJpaMvcRest1Application : No active profile set, falling back to default profiles: default
+2021-11-07 00:07:25.052  INFO 10728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-07 00:07:25.136  INFO 10728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74ms. Found 6 repository interfaces.
+2021-11-07 00:07:25.497  INFO 10728 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f33a85fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-07 00:07:25.922  INFO 10728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-11-07 00:07:25.956  INFO 10728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-07 00:07:25.956  INFO 10728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-11-07 00:07:26.107  INFO 10728 --- [main] o.a.c.c.C.[.[localhost].[/SpringMVC]     : Initializing Spring embedded WebApplicationContext
+2021-11-07 00:07:26.108  INFO 10728 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1847 ms
+2021-11-07 00:07:26.267  INFO 10728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-07 00:07:26.414  INFO 10728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-07 00:07:26.467  INFO 10728 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-07 00:07:26.562  INFO 10728 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-07 00:07:26.565  INFO 10728 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-07 00:07:26.743  INFO 10728 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-07 00:07:26.906  INFO 10728 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-07 00:07:27.957  INFO 10728 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-07 00:07:28.433  INFO 10728 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-07 00:07:29.247  INFO 10728 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-07 00:07:29.337  WARN 10728 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-07 00:07:29.718  INFO 10728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/SpringMVC'
+2021-11-07 00:07:29.721  INFO 10728 --- [main] SpringBootCoreDataJpaMvcRest1Application : Started TimesheetSpringBootCoreDataJpaMvcRest1Application in 6.107 seconds (JVM running for 7.539)
+2021-11-07 00:07:44.413  INFO 2104 --- [main] tn.esprit.spring.test.TimeSheetTest      : Starting TimeSheetTest on DESKTOP-5J3PV4C with PID 2104 (started by Gàston in C:\Users\Gàston\Desktop\testemail\timeproject)
+2021-11-07 00:07:44.416  INFO 2104 --- [main] tn.esprit.spring.test.TimeSheetTest      : No active profile set, falling back to default profiles: default
+2021-11-07 00:07:44.842  INFO 2104 --- [main] tn.esprit.spring.test.TimeSheetTest      : Started TimeSheetTest in 1.1 seconds (JVM running for 2.506)
+2021-11-07 00:11:53.479  INFO 6332 --- [main] tn.esprit.spring.test.TimeSheetTest      : Starting TimeSheetTest on DESKTOP-5J3PV4C with PID 6332 (started by Gàston in C:\Users\Gàston\Desktop\testemail\timeproject)
+2021-11-07 00:11:53.485  INFO 6332 --- [main] tn.esprit.spring.test.TimeSheetTest      : No active profile set, falling back to default profiles: default
+2021-11-07 00:11:53.824  INFO 6332 --- [main] tn.esprit.spring.test.TimeSheetTest      : Started TimeSheetTest in 1.147 seconds (JVM running for 2.737)
+2021-11-07 00:12:29.265  INFO 18956 --- [main] tn.esprit.spring.test.TimeSheetTest      : Starting TimeSheetTest on DESKTOP-5J3PV4C with PID 18956 (started by Gàston in C:\Users\Gàston\Desktop\testemail\timeproject)
+2021-11-07 00:12:29.270  INFO 18956 --- [main] tn.esprit.spring.test.TimeSheetTest      : No active profile set, falling back to default profiles: default
+2021-11-07 00:12:29.565  INFO 18956 --- [main] tn.esprit.spring.test.TimeSheetTest      : Started TimeSheetTest in 1.027 seconds (JVM running for 2.431)
+2021-11-07 00:13:10.050  INFO 17040 --- [main] tn.esprit.spring.test.TimeSheetTest      : Starting TimeSheetTest on DESKTOP-5J3PV4C with PID 17040 (started by Gàston in C:\Users\Gàston\Desktop\testemail\timeproject)
+2021-11-07 00:13:10.058  INFO 17040 --- [main] tn.esprit.spring.test.TimeSheetTest      : No active profile set, falling back to default profiles: default
+2021-11-07 00:13:10.316  INFO 17040 --- [main] tn.esprit.spring.test.TimeSheetTest      : Started TimeSheetTest in 0.976 seconds (JVM running for 2.361)
+2021-11-07 00:14:59.651  INFO 10728 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-11-07 00:14:59.654  INFO 10728 --- [RMI TCP Connection(14)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-07 00:14:59.656  INFO 10728 --- [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-07 00:14:59.661  INFO 10728 --- [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-07 00:14:59.669  INFO 10728 --- [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -5,10 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 //@org.springframework.context.annotation.EnableAspectJAutoProxy
 @SpringBootApplication
-public class TimesheetSpringBootCoreDataJpaMvcRest1Application {
+public class TestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TimesheetSpringBootCoreDataJpaMvcRest1Application.class, args);
+		SpringApplication.run(TestApplication.class, args);
 	}
 
 }
