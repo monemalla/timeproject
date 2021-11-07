@@ -16,7 +16,7 @@ pipeline {
 	
 
     stages {
-        stage('Build') {
+        /*stage('Build') {
 
             steps {
 
@@ -57,7 +57,15 @@ pipeline {
 				  
 				   
 				 }
-			   }
+			   }*/
+	    stage ('deliver to docker compose'){
+		  steps{
+		    echo 'Inside deliver to docker compse stage'
+			//bat "get-content .\docker-compose.yaml | %{$_ -replace "","${DOCKER_IMAGE_VERSION}"}"
+			echo '${currentBuild.previousBuild.number}'
+			
+		  }
+		}
 		
 		
     }
