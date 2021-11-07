@@ -44,7 +44,7 @@ pipeline {
 			   
 			   bat "mvn dockerfile:build -Ddockerfile.repository=${ARTIFACTID}"
 		}
-    }/*
+    }
 	    stage ('Push to registry'){
 		    steps {
 			   echo 'Inside Push to registry Stage'
@@ -57,7 +57,7 @@ pipeline {
 				  
 				   
 				 }
-			   }*/
+			   }
 		
 		
     }
