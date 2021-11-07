@@ -73,7 +73,7 @@ pipeline {
             }
         }
 		
-
+}
 	post {
         always {
             echo 'This will always run'
@@ -92,6 +92,6 @@ pipeline {
             echo 'For example, if the Pipeline was previously failing but is now successful'
         }
     }	
-    }
+    
  }
 
