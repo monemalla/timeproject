@@ -9,9 +9,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>tn.esprit.spring</groupId>
   <artifactId>timesheet-spring-boot-core-data-jpa-mvc-rest-1</artifactId>
-  <name>Test</name>
+  <name>Timesheet-spring-boot-core-data-jpa-mvc-REST-1</name>
   <version>0.0.1-SNAPSHOT</version>
-  <description>Demo project for Spring Boot</description>
+  <description>Timesheet-spring-boot-core-data-jpa-mvc-REST-1</description>
   <build>
     <plugins>
       <plugin>
