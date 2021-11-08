@@ -89,7 +89,7 @@ pipeline {
             echo 'This will run only if successful'
         }
         failure {
-            mail bcc: 'allagui967@gmail.com', body: "<b>Example</b>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}<br> error: error=run.getPreviousBuild().result.toString().equals(run.result.toString())", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "ERROR CI: Project name -> ${env.JOB_NAME}", to: "allagui967@gmail.com";
+            mail bcc: 'allagui967@gmail.com', body: "<b>Example</b>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}<br> error: error=currentBuild.result", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "ERROR CI: Project name -> ${env.JOB_NAME}", to: "allagui967@gmail.com";
         }
         unstable {
             echo 'This will run only if the run was marked as unstable'
