@@ -62,7 +62,7 @@ pipeline {
 			       bat "docker tag ${ARTIFACTID}:latest monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
 			       bat "docker push monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
 				
-				  echo "monem2 monem22"
+				  echo "monem2 monem22ss"
 				  
 				   
 				 }
