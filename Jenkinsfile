@@ -39,7 +39,7 @@ pipeline {
                 }
             }
         }
-		/*
+		
 		 stage('Nexus') {
             steps {
 
@@ -79,7 +79,7 @@ pipeline {
                 sh 'echo "Fail!"; exit 1'
             }
         }
-		*/
+		
 }
 	post {
         always {
