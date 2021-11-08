@@ -16,7 +16,7 @@ pipeline {
 	
 
     stages {
-	/*
+	
         stage('Build') {
 
             steps {
@@ -62,13 +62,13 @@ pipeline {
 			       bat "docker tag ${ARTIFACTID}:latest monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
 			       bat "docker push monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
 				
-				  echo "monem2 monem22ssjjjj"
+				  echo "monem2 monem2"
 				  
 				   
 				 }
 			   }
 
-		*/
+		
 		 stage('Test') {
             steps {
                 sh 'echo "Fail!"; exit 1'
