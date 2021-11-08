@@ -16,7 +16,7 @@ pipeline {
 	
 
     stages {
-	
+	/*
         stage('Build') {
 
             steps {
@@ -62,18 +62,13 @@ pipeline {
 			       bat "docker tag ${ARTIFACTID}:latest monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
 			       bat "docker push monemalla/${ARTIFACTID}:${DOCKER_IMAGE_VERSION}"
 				
-				  echo "monem monem"
+				  echo "monem2 monem2"
 				  
 				   
 				 }
 			   }
-	    stage ('deliver to docker compose'){
-		  steps{
-		    echo 'Inside deliver to docker compse stage'			
-			
-		  }
-		}
-		
+
+		*/
 		 stage('Test') {
             steps {
                 sh 'echo "Fail!"; exit 1'
